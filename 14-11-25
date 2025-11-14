@@ -1,0 +1,23 @@
+UNION AND UNION ALL:
+- (SELECT first_name || ' ' || last_name AS nombre, last_update  FROM actor) UNION ALL (SELECT first_name || ' ' || last_name AS nombre, last_update FROM customer) WHERE nombre LIKE 'J%' ORDER BY nombre ASC LIMIT 10;(NO SIRVE)
+
+- SELECT first_name || ' ' || last_name AS nombre,last_update  FROM actor UNION ALL SELECT first_name || ' ' || last_name AS nombre,last_update FROM customer WHERE first_name LIKE 'J%' ORDER BY nombre ASC LIMIT 10;(FUNCIONA(NO DA LA "J"))
+
+- SELECT first_name,last_update  FROM actor UNION ALL SELECT first_name,last_update FROM customer WHERE first_name LIKE ('J%') ORDER BY first_name ASC LIMIT 10;
+
+- SELECT first_name || ' ' || last_name AS nombre,last_update FROM actor WHERE nombre LIKE 'J%' UNION ALL SELECT first_name || ' ' || last_name AS nombre,last_update FROM customer WHERE nombre LIKE 'J%' ORDER BY nombre ASC LIMIT 10;
+
+- SELECT first_name || ' ' || last_name AS nombre,last_update WHERE first_name LIKE 'J%' FROM actor UNION ALL SELECT first_name || ' ' || last_name AS nombre,last_update WHERE first_name LIKE 'J%' FROM customer ORDER BY nombre ASC LIMIT 10; (NO FUNCIONA)(Debido al orden de procesamiento del psql la orden no funciona)
+(orden: FROM, WHERE,SELECT)
+
+INTERSECT:
+
+Busca en ambas tablas a quienes tengas el mismo nombre y apellido:
+- SELECT first_name || ' ' || last_name AS nombre FROM actor INTERSECT SELECT first_name || ' ' || last_name AS nombre FROM customer ORDER BY nombre ASC LIMIT 10;(SOLO HAY UNA COINCIDENCIA)(FUNCIONA)
+- SELECT first_name || ' ' || last_name AS nombre,last_update FROM actor INTERSECT SELECT first_name || ' ' || last_name AS nombre,last_update FROM customer ORDER BY nombre ASC LIMIT 10;(EL RESULTADO ES 0, AL NO HABER COINCIDENCIAS)
+
+EXCEPT:
+- SELECT first_name, last_name, last_update FROM customer EXCEPT SELECT first_name, last_name, last_update FROM film ORDER BY first_name ASC;
+
+CONSULTAS:
+- SELECT first_name, LENGTH(first_name) FROM customer WHERE LENGTH(first_name)>7 UNION SELECT first_name, LENGTH(first_name) FROM actor WHERE LENGTH(first_name) > 7;
