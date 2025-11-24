@@ -1,0 +1,23 @@
+
+Creacion de tabla Users:
+
+ - CREATE TABLE IF NOT EXISTS users ( users_id INTEGER GENERATED ALWAYS AS IDENTIFY PRIMARY KEY, name VARCHAR(50) UNIQUE NOT NULL, email VARCHAR(255) UNIQUE NOT NULL, password VARCHAR(50) NOT NULL);
+
+Creacion de tabla:
+
+Creacion de tabla Groups:
+
+ - CREATE TABLE IF NOT EXISTS groups (groups_id INTEGER GENERATED ALWAYS AS PRIMARY KEY, name VARCHAR(50) UNIQUE NOT NULL, purpose TEXT, debt DECIMAL(10, 2) DEFAULT 0.00 );
+
+
+ - CREATE TABLE IF NOT EXISTS groups (
+    groups_id INTEGER GENERATED ALWAYS AS PRIMARY KEY,
+    name VARCHAR(50) UNIQUE NOT NULL,
+    purpose TEXT,
+    debt DECIMAL(10, 2) DEFAULT 0.00
+);
+
+Creacion de tabla Expenses:
+
+ - CREATE TABLE IF NOT EXISTS expenses (expenses_id INTEGER GENERATED ALWAYS AS PRIMARY KEY, created_at TIMESTAMP NOT NULL, amount DOUBLE PRESICION NOT NULL description TEXT, created_by VARCHAR(50) UNIQUE NOT NULL, currency columna TIPODATO CHECK (Money));
+ 
