@@ -1,0 +1,6 @@
+1) OBTENER NOMBRE DE CATEGORIA Y NOMBRE DE PELICULA DE AQUELLAS PELICULAS CUYO ID SEA UNO O DOS O TRES.
+ - SELECT category.name, film.title FROM fim_category INNER JOIN category WHERE film_id IN (1,2,3); using(category_id) INNER JOIN film using(film_id)
+2)nombre peli id peli y nombre de actor cuyo nombres empiezen por j
+ - SELECT first_name, film.film_id, title FROM film INNER JOIN film_actor using (film_id) INNER JOIN actor ON film_actor.actor_id = actor.actor_id;
+ -profe: SELECT first_name,film_id,title FROM film INNER JOIN film_actor using (film_id) INNER JOIN actor ON film_actor.actor_id = actor.actor_id;
+ -compañero: SELECT actor.first_name, film.film_id,film.title FROM actor INNER JOIN film_actor USING(actor_id) INNER JOIN film  USING(film_id) WHERE first_name LIKE 'j%';

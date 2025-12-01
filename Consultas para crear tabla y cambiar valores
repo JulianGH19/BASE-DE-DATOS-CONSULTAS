@@ -1,0 +1,11 @@
+ 
+          PRIMER INTENTO DE CREAR TABLAS(ERRONEO)
+ - CREATE TABLE [IF NOT EXISTS] usuario (id_usuario INTEGER NOT NULL DEFAULT, verificado VARCHAR NOT NULL DEFAULT, nombre VARCHAR NOT NULL DEFAULT, apellidos VARCHAR NOT NULL DEFAULT, pw_hash VARCHAR NOT NULL DEFAULT);
+CREATE TABLE [IF NOT EXISTS] blog (id_blog INTEGER NOT NULL DEFAULT, title VARCHAR NOT NULL DEFAULT, fecha_creacion VARCHAR NOT NULL DEFAULT, creado_por VARCHAR NOT NULL DEFAULT);
+
+ 
+     CREAMOS LA TABLA Y LUEGO CAMBIAMOS DATOS DE LOS VALORES,
+- CREATE TABLE IF NOT EXISTS user (user_id INTEGER NOT NULL, verificate VARCHAR NOT NULL,first_name VARCHAR UNIQUE NOT NULL, last_name VARCHAR NOT NULL, pw_hash VARCHAR UNIQUE NOT NULL);
+
+
+- update users as u set nombre = u2.nombre, apellido= u2.apellido, from (values   (1,''nombre','apellido''), (2, ''    ', '    ' )) as u2 (id, nombre, apellido) WHERE u2.id = u.id;
