@@ -1,0 +1,18 @@
+Hemos leido los nuevos contenidos del libro BAE, además de hablar sobre metodolgias agiles(las de cascada estan en desuso actualmente).
+
+- Skrun (script mencionado por el profe)
+
+Hacemos uso de estas acciones en los examenes:
+                                                      ------------------------------ Identificación de entidades y relaciones -----------------------------------------------
+
+- Esta etapa tiene como objetivo determinar la información que requiere ser almacenada en el sistema. Para ello, se llevarán a cabo las siguientes acciones:
+
+   1.Identificar las entidades* principales del dominio.
+   2.Especificar los atributos* que componen cada entidad.
+   3.Establecer las relaciones* entre entidades, definiendo sus respectivas cardinalidades.
+
+ Dentificamos las entidades principales presentes en el documento y, para cada una de ellas, detallamos los atributos correspondientes que se han especificado. Las entidades se destacarán en negrita y sus atributos como código en línea.
+
+Si creas Create Table "user" seras capaz de usar el elemento user
+
+- Un serial es una autoincremental de Postgress, y serial no forma parte del estandar de sql.
