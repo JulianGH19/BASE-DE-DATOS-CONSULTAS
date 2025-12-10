@@ -23,3 +23,21 @@ Si creas Create Table "user" seras capaz de usar el elemento user
 
 - base de datos procedural: Yo le indico paso por paso de forma interactiva para llegar a un resultado final.
 - base de datos no procedural: Yo te doy lo que quiero, pero tu encuentras el metodo para alcanzarlo.
+
+ENTIDADES: Son las tablas en si misma, la razon de la base de datos (cuadrados)
+ELEMENTOS: Son las opciones dentro de la tabla que cmplen con sus propias funciones.(circulo)
+ATRIBUTO: Son los valores asignados a los elementos ¿dentro de la tabla?.
+
+
+
+---------Gasto-------------
+id integer clave primaria (pk)
+importe float
+descripción varchar
+fecha timestamp
+moneda (euros, dólares, etc.)
+categoría
+individuo que registró el gasto
+individuos afectadas por el gasto
+
+- Los datos anteriores cuentan con una relación, donde los gastos son repartidos entre lo registrado para la entidad individuo y los gastos de individuos(dos tipo de datos distintos, pero en relacion con la tabla idividuo)
