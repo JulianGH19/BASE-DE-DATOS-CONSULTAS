@@ -16,3 +16,10 @@ Hacemos uso de estas acciones en los examenes:
 Si creas Create Table "user" seras capaz de usar el elemento user
 
 - Un serial es una autoincremental de Postgress, y serial no forma parte del estandar de sql.
+
+- nunca pueden duplicarse los elementos por la irreversibiladad*(buscar significado)*(en una celda), en una clave primaria nunca debe darse el caso de....
+
+-Definir la moneda como "En un"(tipo de dato que valida Varchar,...,...,.., que puede valer distintas monedas(hace un check para validar ese valor, a nivel de codigo(por debajo de la tabla))) es menos factible al ser un String lo que ocupa mas espacio de bits, ademas que si se realizan algun cambio conlleva un mayor gasto de recursos al readaptarse a los cambios.
+
+- base de datos procedural: Yo le indico paso por paso de forma interactiva para llegar a un resultado final.
+- base de datos no procedural: Yo te doy lo que quiero, pero tu encuentras el metodo para alcanzarlo.

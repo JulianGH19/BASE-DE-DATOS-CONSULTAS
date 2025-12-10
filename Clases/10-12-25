@@ -1,1 +1,25 @@
+Hemos leido los nuevos contenidos del libro BAE, además de hablar sobre metodolgias agiles(las de cascada estan en desuso actualmente).
 
+- Skrun (script mencionado por el profe)
+
+Hacemos uso de estas acciones en los examenes:
+                                                      ------------------------------ Identificación de entidades y relaciones -----------------------------------------------
+
+- Esta etapa tiene como objetivo determinar la información que requiere ser almacenada en el sistema. Para ello, se llevarán a cabo las siguientes acciones:
+
+   1.Identificar las entidades* principales del dominio.
+   2.Especificar los atributos* que componen cada entidad.
+   3.Establecer las relaciones* entre entidades, definiendo sus respectivas cardinalidades.
+
+ Dentificamos las entidades principales presentes en el documento y, para cada una de ellas, detallamos los atributos correspondientes que se han especificado. Las entidades se destacarán en negrita y sus atributos como código en línea.
+
+Si creas Create Table "user" seras capaz de usar el elemento user
+
+- Un serial es una autoincremental de Postgress, y serial no forma parte del estandar de sql.
+
+- nunca pueden duplicarse los elementos por la irreversibiladad*(buscar significado)*(en una celda), en una clave primaria nunca debe darse el caso de....
+
+-Definir la moneda como "En un"(tipo de dato que valida Varchar,...,...,.., que puede valer distintas monedas(hace un check para validar ese valor, a nivel de codigo(por debajo de la tabla))) es menos factible al ser un String lo que ocupa mas espacio de bits, ademas que si se realizan algun cambio conlleva un mayor gasto de recursos al readaptarse a los cambios.
+
+- base de datos procedural: Yo le indico paso por paso de forma interactiva para llegar a un resultado final.
+- base de datos no procedural: Yo te doy lo que quiero, pero tu encuentras el metodo para alcanzarlo.
